@@ -1,0 +1,21 @@
+<div class="notification">
+  <div class="inner">
+      <div class="path"><em class="is-size-7">{{ path }}</em></div>
+      <p>{{ data.text }}</p>
+  </div>
+
+  <div *ngIf="show">
+
+    <app-comment 
+      *ngFor="let comment of replies | async"  
+      [comment]="comment.payload.doc">
+  
+    </app-comment>
+<!-- 
+    <textarea type="text" #form></textarea>
+    <button (click)="addReply(form)">Submit</button> -->
+  </div>
+    
+  <button *ngIf="!show" class="button is-small" (click)="showReplies()">More</button>
+    
+</div>

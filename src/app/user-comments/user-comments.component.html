@@ -1,0 +1,8 @@
+
+<h2>Comments from @JeffD23</h2>
+
+<div *ngFor="let comment of comments | async">
+
+  <app-comment [comment]="comment.payload.doc"></app-comment>
+
+</div>

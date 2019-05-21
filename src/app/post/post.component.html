@@ -1,0 +1,21 @@
+<h1>Blog Post</h1>
+
+<p>Biodiesel shaman 90's air plant letterpress. Poutine banh mi air plant semiotics gochujang banjo pitchfork DIY adaptogen. Chambray chillwave bitters blog church-key sriracha trust fund. Adaptogen live-edge seitan asymmetrical succulents artisan. VHS meditation taiyaki cold-pressed, crucifix semiotics occupy offal shabby chic hoodie roof party pabst. IPhone aesthetic wayfarers YOLO ugh chia farm-to-table.
+</p>
+<p>Biodiesel shaman 90's air plant letterpress. Poutine banh mi air plant semiotics gochujang banjo pitchfork DIY adaptogen. Chambray chillwave bitters blog church-key sriracha trust fund. Adaptogen live-edge seitan asymmetrical succulents artisan. VHS meditation taiyaki cold-pressed, crucifix semiotics occupy offal shabby chic hoodie roof party pabst. IPhone aesthetic wayfarers YOLO ugh chia farm-to-table.
+</p>
+<p>Biodiesel shaman 90's air plant letterpress. Poutine banh mi air plant semiotics gochujang banjo pitchfork DIY adaptogen. Chambray chillwave bitters blog church-key sriracha trust fund. Adaptogen live-edge seitan asymmetrical succulents artisan. VHS meditation taiyaki cold-pressed, crucifix semiotics occupy offal shabby chic hoodie roof party pabst. IPhone aesthetic wayfarers YOLO ugh chia farm-to-table.
+</p>
+
+<button class="button" routerLink="/user-comments">User Comments</button>
+
+
+<h2>Replies</h2>
+
+<app-comment 
+*ngFor="let comment of comments | async"  
+[comment]="comment.payload.doc">
+
+
+</app-comment>
+
